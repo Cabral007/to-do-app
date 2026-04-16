@@ -1,0 +1,154 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo geral */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* Container principal */
+.container {
+  width: 420px;
+  margin: 60px auto;
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00ffc8;
+  letter-spacing: 1px;
+}
+
+/* Área de input */
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input-area input,
+.input-area select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: #1a1a1a;
+  color: white;
+}
+
+/* Botão */
+.input-area button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #00ffc8;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-area button:hover {
+  background: #00cfa0;
+  transform: scale(1.05);
+}
+
+/* Lista */
+.task-list {
+  list-style: none;
+}
+
+/* Item da tarefa */
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+/* Hover */
+.task-list li:hover {
+  background: #222;
+}
+
+/* Texto */
+.task-text {
+  flex: 1;
+}
+
+/* Prioridade */
+.prioridade {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 10px;
+  color: white;
+}
+
+/* Cores */
+.alta {
+  background: #ff3b3b;
+}
+
+.media {
+  background: #ffaa00;
+}
+
+.baixa {
+  background: #00c853;
+}
+
+/* Checkbox */
+.task-list input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Concluído */
+.completed {
+  opacity: 0.5;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+}
+
+/* Botão deletar */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Scroll bonito */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ffc8;
+  border-radius: 10px;
+}
